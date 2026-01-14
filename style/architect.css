@@ -243,6 +243,24 @@ main {
   filter: grayscale(100%);
 }
 
+/* Footer Section */
+
+.footer-section {
+  max-width: 1440px;
+  height: 100px;
+  background-color: #fff4e7;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 160px;
+  margin-bottom: 50px;
+}
+
+.footer-text {
+  font-size: 1.25rem;
+}
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
