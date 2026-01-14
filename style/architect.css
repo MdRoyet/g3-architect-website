@@ -149,6 +149,7 @@ main {
 
 .experience {
   gap: 140px;
+  margin-top: 130px;
 }
 
 #experience-title-border {
@@ -168,6 +169,23 @@ main {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
   margin-bottom: 20px;
   border-radius: 8px;
+}
+
+#ex-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -77px;
+}
+
+#ex-years {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.img-architect img {
+  width: 100%;
 }
 
 /* Facts Section    */
@@ -229,7 +247,8 @@ main {
 
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-links {
+  .nav-links,
+  .experience {
     flex-direction: column;
   }
   .teams {
@@ -255,6 +274,10 @@ main {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
     justify-items: center;
+  }
+  #ex-badge {
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
 
