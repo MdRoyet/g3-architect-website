@@ -26,7 +26,8 @@
 /* Dark 03 */
 
 .text-light-gray,
-.banner-description {
+.banner-description,
+.feature-description {
   color: #727272;
 }
 
@@ -42,6 +43,11 @@
   font-size: 1.25rem;
   font-weight: 600;
   border: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Header Style */
@@ -93,10 +99,45 @@
   width: 100%;
 }
 
+/* Section - Team Styles */
+
+.teams {
+  margin-top: 85px;
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-feature {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.h3-span1 {
+  font-size: 2.8rem;
+  font-weight: 500px;
+  color: #727272;
+}
+
+.h3-span2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.h3-span3 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ff900e;
+}
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
-  .nav-bar,
+  .navbar,
   .nav-links {
     flex-direction: column;
   }
