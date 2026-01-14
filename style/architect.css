@@ -184,6 +184,24 @@ main {
   max-width: 540px;
 }
 
+/* Sponsor Section */
+
+.sponsor-info {
+  max-width: 540px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.sponsor-companies {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.sponsor-companies img {
+  filter: grayscale(100%);
+}
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
@@ -204,6 +222,17 @@ main {
   .our-feature {
     margin-left: 50px;
   }
+
+  .facts-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
 }
 
 /* Medium Size Devices */
@@ -214,5 +243,16 @@ main {
   }
   .our-feature {
     margin-left: 50px auto;
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .sponsor-companies {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
 }
